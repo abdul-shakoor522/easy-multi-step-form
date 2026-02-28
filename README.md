@@ -5,7 +5,6 @@
 
 A lightweight, secure, and highly customizable WordPress plugin for creating professional multi-step contact forms. Designed for seamless user experience and effortless administration.
 
----
 
 ## ✨ Key Features
 
@@ -19,7 +18,6 @@ A lightweight, secure, and highly customizable WordPress plugin for creating pro
 - **🌐 Accessible Design**: Follows ARIA standards for better accessibility.
 - **🛠️ Advanced Fields**: Supports Datepickers, custom Select menus, and reCAPTCHA (v2/v3).
 
----
 
 ## 🚀 Installation
 
@@ -31,7 +29,6 @@ A lightweight, secure, and highly customizable WordPress plugin for creating pro
 3. **Activate**: Once installed, click the **Activate Plugin** button.
 4. **Display**: Paste the shortcode `[easy_multi_step_form]` on any page or post where you want the form to appear.
 
----
 
 ## 🛠️ Usage
 
@@ -44,7 +41,6 @@ Simply use the following shortcode:
 ### Managing Submissions
 Navigate to the **Contact Submissions** menu in your WordPress back-end to view, filter, and manage all received form entries.
 
----
 
 ## 🛡️ Security
 
@@ -54,7 +50,6 @@ This plugin respects the highest WordPress security standards:
 - **Output Escaping**: All data displayed is properly escaped with `esc_html()` and `esc_attr()`.
 - **Bot Protection**: Seamless integration with Google reCAPTCHA.
 
----
 
 ## 💻 Tech Stack
 
@@ -64,7 +59,6 @@ This plugin respects the highest WordPress security standards:
   - [Flatpickr](https://flatpickr.js.org/) for modern date selection.
   - [Choices.js](https://choices-js.github.io/Choices/) for beautiful select menus.
 
----
 
 ## � Changelog
 
@@ -76,12 +70,10 @@ This plugin respects the highest WordPress security standards:
 ### 1.0.0
 - Initial release.
 
----
 
 ## �📄 License
 
 This project is licensed under the GPLv2 or later.
 
----
 
 **Developed with ❤️ by [shakoor](https://shakoor-wpdev.vercel.app)**
