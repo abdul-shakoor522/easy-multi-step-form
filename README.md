@@ -23,9 +23,13 @@ A lightweight, secure, and highly customizable WordPress plugin for creating pro
 
 ## 🚀 Installation
 
-1. **Download & Upload**: Upload the plugin folder to your `/wp-content/plugins/` directory.
-2. **Activate**: Go to the 'Plugins' menu in your WordPress dashboard and click 'Activate' for **Easy Multi Step Form**.
-3. **Display**: Paste the shortcode `[easy_multi_step_form]` on any page or post where you want the form to appear.
+1. **Download the Plugin**: Click the green **Code** button on this GitHub repository and select **Download ZIP**.
+2. **Upload to WordPress**:
+   - Log in to your WordPress Admin Dashboard.
+   - Navigate to **Plugins** > **Add New** > **Upload Plugin**.
+   - Choose the downloaded `easy-multi-step-form.zip` file and click **Install Now**.
+3. **Activate**: Once installed, click the **Activate Plugin** button.
+4. **Display**: Paste the shortcode `[easy_multi_step_form]` on any page or post where you want the form to appear.
 
 ---
 
