@@ -10,6 +10,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: easy-multi-step-form
  * Domain Path: /languages
+ * Update URI: false
  *
  * @package EasyMultiStepForm
  */
@@ -51,6 +52,7 @@ class Easy_Multi_Step_Form {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_public_assets' ) );
 		register_activation_hook( __FILE__, array( $this, 'activate_plugin' ) );
 		register_deactivation_hook( __FILE__, array( $this, 'deactivate_plugin' ) );
+		add_filter( 'site_transient_update_plugins', array( $this, 'block_plugin_updates' ) );
 	}
 
 	/**
@@ -221,6 +223,23 @@ class Easy_Multi_Step_Form {
 	 */
 	public static function deactivate_plugin() {
 		flush_rewrite_rules();
+	}
+
+	/**
+	 * Block plugin updates to prevent "View details" and slug conflicts
+	 *
+	 * @param object $value Update transient.
+	 * @return object
+	 */
+	public function block_plugin_updates( $value ) {
+		$plugin_file = plugin_basename( EMSF_PLUGIN_DIR . 'easy-multi-step-form.php' );
+		if ( isset( $value->response[ $plugin_file ] ) ) {
+			unset( $value->response[ $plugin_file ] );
+		}
+		if ( isset( $value->no_update[ $plugin_file ] ) ) {
+			unset( $value->no_update[ $plugin_file ] );
+		}
+		return $value;
 	}
 }
 
